@@ -10,23 +10,21 @@ License: GPLv3+
 lug-helper prepares the system and installs the StarCitizen game on Linux
  
 %prep
- 
+%setup -q
+
 %build
-%make_build
  
 %install
-%make_install
+mkdir -p %{buildroot}/usr/local/bin
+install -m 755 %{name} %{buildroot}/usr/local/bin/%{name}
  
 %files
-%defattr(-,root,root,-)
-%doc README.md
-.libs/*
-%dir %{_datadir}/cdplayer
+/usr/local/bin/%{name}
 
 %changelog
 * Sat Sep 07 2024 rawfox <rawfoxde@gmail.com> - 2.18-1
 - First copr package
 - Introducing Fedora COPR supported packages
- 
+
 %clean
 rm -rf %{buildroot}
