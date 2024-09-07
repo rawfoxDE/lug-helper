@@ -1,5 +1,5 @@
 %global dist .fc40
-Name: lug-helper
+Name: lug-helper.sh
 Version: 2.18
 Release: 1%{?dist}
 Summary: lug-helper prepares the system and installes StarCitizen on Linux
