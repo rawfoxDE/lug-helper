@@ -23,7 +23,5 @@ lug-helper prepares the system and installs the StarCitizen game on Linux
 .libs/*
 %dir %{_datadir}/cdplayer
  
-%changelog
- 
 %clean
 rm -rf %{buildroot}
