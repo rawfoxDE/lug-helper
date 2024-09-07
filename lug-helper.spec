@@ -2,8 +2,11 @@
 Name: lug-helper
 Version: 2.18
 Release: 1%{?dist}
- 
-%summary
+Summary: lug-helper prepares the system and installes StarCitizen on Linux
+
+License: GPLv3+
+
+%description
 lug-helper prepares the system and installs the StarCitizen game on Linux
  
 %prep
