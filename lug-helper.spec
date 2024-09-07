@@ -22,6 +22,11 @@ lug-helper prepares the system and installs the StarCitizen game on Linux
 %doc README.md
 .libs/*
 %dir %{_datadir}/cdplayer
+
+%changelog
+* Sat Sep 07 2024 rawfox <rawfoxde@gmail.com> - 2.18-1
+- First copr package
+- Introducing Fedora COPR supported packages
  
 %clean
 rm -rf %{buildroot}
