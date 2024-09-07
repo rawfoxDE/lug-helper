@@ -6,6 +6,8 @@ Summary: lug-helper prepares the system and installes StarCitizen on Linux
 
 License: GPLv3+
 
+Source0: %{name}-%{version}.tar.gz
+
 %description
 lug-helper prepares the system and installs the StarCitizen game on Linux
  
