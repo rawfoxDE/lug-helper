@@ -16,10 +16,10 @@ lug-helper prepares the system and installs the StarCitizen game on Linux
  
 %install
 mkdir -p %{buildroot}/usr/local/bin
-install -m 755 %{name} %{buildroot}/usr/local/bin/%{lug-helper.sh}
+install -m 755 %{name} %{buildroot}/usr/local/bin/lug-helper.sh
  
 %files
-/usr/local/bin/%{lug-helper.sh}
+/usr/local/bin/lug-helper.sh
 
 %changelog
 * Sat Sep 07 2024 rawfox <rawfoxde@gmail.com> - 2.18-1
