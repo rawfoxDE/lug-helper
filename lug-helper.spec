@@ -1,5 +1,5 @@
 %global dist .fc40
-Name: lug-helper.sh
+Name: lug-helper
 Version: 2.18
 Release: 1%{?dist}
 Summary: lug-helper prepares the system and installes StarCitizen on Linux
@@ -16,10 +16,10 @@ lug-helper prepares the system and installs the StarCitizen game on Linux
  
 %install
 mkdir -p %{buildroot}/usr/local/bin
-install -m 755 %{name} %{buildroot}/usr/local/bin/%{name}
+install -m 755 %{name} %{buildroot}/usr/local/bin/%{lug-helper.sh}
  
 %files
-/usr/local/bin/%{name}
+/usr/local/bin/%{lug-helper.sh}
 
 %changelog
 * Sat Sep 07 2024 rawfox <rawfoxde@gmail.com> - 2.18-1
