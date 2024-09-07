@@ -3,7 +3,7 @@ Name: lug-helper
 Version: 2.18
 Release: 1%{?dist}
  
-%description
+%summary
 lug-helper prepares the system and installs the StarCitizen game on Linux
  
 %prep
