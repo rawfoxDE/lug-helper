@@ -2462,7 +2462,7 @@ install_game_wine() {
 
         # Run the installer
         debug_print continue "Preparing the wine prefix and launching the RSI Installer..."
-        WINEPREFIX="$install_dir" winecfg -v win10 2>/tmp/sc-install.log &&
+        WINEPREFIX="$install_dir" winecfg -v win11 2>/tmp/sc-install.log &&
         WINEPREFIX="$install_dir" winetricks powershell dxvk 2>>/tmp/sc-install.log
         WINEPREFIX="$install_dir" wine "$tmp_dir/$rsi_installer" 2>>/tmp/sc-install.log
 
